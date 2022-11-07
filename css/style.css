@@ -104,7 +104,6 @@ header {
   gap: 30px;  
 }
 
-
 .solution-item::before {
   display: block;
   content: "";
@@ -116,18 +115,18 @@ header {
     margin-bottom: 30px;
 }
 .icon-antena::before{
-  background-image: url(../images/antenna.png);
+  background-image: url(../images/antenna.svg);
 }
 .icon-clock::before{
-  background-image: url(../images/clock.png);
+  background-image: url(../images/clock.svg);
 }
 
 .icon-diagram::before{
-  background-image: url(../images/diagram.png);
+  background-image: url(../images/diagram.svg);
 }
 
 .icon-astronaut::before{
-  background-image: url(../images/astronaut.png) ;
+  background-image: url(../images/astronaut.svg) ;
 }
 
 .contacts{
@@ -275,21 +274,6 @@ text-transform: uppercase;
   padding-top: 0;
 }
 
-.socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.socials-link {
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-  
-}
 .solution-list {
     margin-bottom: 10px;
   font-weight: 700;
@@ -358,13 +342,39 @@ text-transform: uppercase;
   fill: #AFB1B8;
 
 }
+.footer-socials-link {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);;
+    fill: #ffffff;
 
+}
 .socials-link:hover,
-.socials-link:focus 
+.socials-link:focus {
+  fill: #ffffff;
+  background-color: #2196f3;
+
+}
+.footer-socials-link:hover,
+.footer-socials-link:focus 
 { fill: #ffffff;
   background-color: #2196f3;
  
  }
+ .footer-socials-header{
+  font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-bottom: 20px;
+ }
+
 .button-secondary {
   display: inline-block;
   min-height: 38px;
@@ -386,6 +396,38 @@ text-transform: uppercase;
   color: #ffffff;
   background-color: var(--accent-color);
 }
+
+.clients{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+
+}
+.client-link{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      height: 92px;
+      border: 1px solid #AFB1B8;
+      border-radius: 4px ;
+      background-color: #ffffff;
+      fill: #AFB1B8;
+}
+.client-link:hover,
+.client-link:focus{
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+.client-header{
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;}
+
 footer {
   background-color: #2f303a;
   padding-top: 60px;
