@@ -272,9 +272,21 @@ text-transform: uppercase;
 .card {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
-
-  
+}
+.socials-link{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
 
 }
 .button-secondary {
