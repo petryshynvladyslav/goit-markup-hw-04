@@ -26,6 +26,9 @@ h1,h2,h3,p{
 }
 .link {
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+    
 }
 img {
     display: block;
@@ -50,6 +53,9 @@ header {
     align-items: center;
 
 
+}
+.header-icon{
+  fill: currentColor;
 }
 .logo {
   color: #2196f3;
@@ -153,11 +159,23 @@ header {
 
 .hero{
   background-color: #2f303a;
-  text-align: center;
-    padding-top: 200px;
-      padding-bottom: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)),
+  url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
+  text-align: center;
 }
+
 
 .hero-container {
 
@@ -176,6 +194,11 @@ margin-bottom: 30px;
 text-transform: uppercase;
 
 }
+.solution-item{
+
+}
+
+
 .button {
   display: inline-block;
   min-width: 216px;
@@ -223,6 +246,22 @@ text-transform: uppercase;
 }
 .work-section {
   padding-top: 0;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.socials-link {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  
 }
 .solution-list {
     margin-bottom: 10px;
