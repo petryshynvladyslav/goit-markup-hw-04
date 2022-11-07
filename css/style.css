@@ -101,10 +101,35 @@ header {
 
 .solution-container{
     display: flex;
-  gap: 30px;
-
-   
+  gap: 30px;  
 }
+
+
+.solution-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.icon-antena::before{
+  background-image: url(../images/antenna.png);
+}
+.icon-clock::before{
+  background-image: url(../images/clock.png);
+}
+
+.icon-diagram::before{
+  background-image: url(../images/diagram.png);
+}
+
+.icon-astronaut::before{
+  background-image: url(../images/astronaut.png) ;
+}
+
 .contacts{
     display: flex;
     gap: 50px;
@@ -197,9 +222,6 @@ margin-bottom: 30px;
   line-height: 1.36;
   letter-spacing: 0.06em;
 text-transform: uppercase;
-
-}
-.solution-item{
 
 }
 
