@@ -156,7 +156,12 @@ header {
 .tel-header:hover {
   color: var(--accent-color);
 }
-
+.tel-header,
+.mail-header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .hero{
   background-color: #2f303a;
   padding-top: 200px;
@@ -287,6 +292,7 @@ text-transform: uppercase;
   color: var(--main-text-color);
 }
 .profession {
+  padding-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -322,12 +328,21 @@ text-transform: uppercase;
 .socials-link{
   display: flex;
   justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  fill: #AFB1B8;
 
 }
+
+.socials-link:hover,
+.socials-link:focus 
+{ fill: #ffffff;
+  background-color: #2196f3;
+ 
+ }
 .button-secondary {
   display: inline-block;
   min-height: 38px;
