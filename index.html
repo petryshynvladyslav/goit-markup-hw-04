@@ -30,9 +30,9 @@
         <a href="" class="logo">Web<span class="logo-header">Studio</span></a>
         <nav>
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
+            <li><a href="./index.html" class="header-nav-link  link current">Студія</a></li>
+            <li><a href="./portfolio.html" class="header-nav-link link">Портфоліо</a></li>
+            <li><a href="" class="header-nav-link link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contacts">
@@ -59,7 +59,7 @@
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button">Замовити послугу</button>
+          <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="section">
@@ -99,9 +99,30 @@
         <div class="container">
           <h2 class="work">Чим ми займаємося</h2>
           <ul class="work-list">
-            <li><img src="./images/img1.jpg" alt="заняття" width="370" /></li>
-            <li><img src="./images/img2.jpg" alt="заняття" width="370" /></li>
-            <li><img src="./images/img3.jpg" alt="заняття" width="370" /></li>
+            <li>
+              <div class="work-thumb">
+              <img src="./images/img1.jpg" alt="заняття" width="370" />
+             <div class="work-overlay">  
+              <p class="work-overlay-text">ДEКСТОПНІ ДОДАТКИ</p>
+            </div>
+              </div>
+              </li>
+            <li>   
+               <div class="work-thumb">
+              <img src="./images/img2.jpg" alt="заняття" width="370" />
+             <div class="work-overlay">  
+              <p class="work-overlay-text">МОБІЛЬНІ ДОДАТКИ</p>
+            </div>
+              </div>
+              </li>
+            <li>   
+               <div class="work-thumb">
+                 <img src="./images/img3.jpg" alt="заняття" width="370" />
+             <div class="work-overlay">  
+              <p class="work-overlay-text">ДІЗАЙНЕРСЬКІ РІШЕННЯ</p>
+            </div>
+              </div>
+             </li>
           </ul>
         </div>
       </section>
@@ -486,5 +507,17 @@
     
       
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="modal-icon" width="11" height="11">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button></div>
+    </div>
+
+    <script src="./modal.js"></script>
   </body>
+  
 </html>
